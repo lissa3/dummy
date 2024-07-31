@@ -11,7 +11,12 @@ jobs:
       ALLOWED_HOSTS: "*"
       SECRET_KEY: "my big secret not seen"
     steps:
+    - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
       - uses: actions/checkout@v4
+
 
       - name: Set up Python
         uses: actions/setup-python@v4
