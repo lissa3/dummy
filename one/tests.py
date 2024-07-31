@@ -1,5 +1,4 @@
 from django.urls import reverse
-from .views import start
 
 
 class TestIndex:
