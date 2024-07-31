@@ -15,7 +15,7 @@ prod.py
 htmlcov/
 docs
 sqmemory
-dump
+
 media
 static
 *config.json
