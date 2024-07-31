@@ -12,6 +12,14 @@ jobs:
       SECRET_KEY: "my big secret not seen"
     steps:
       - uses: actions/checkout@v4
+      - name: Set up Node.js globally
+        run: |
+          sudo npm install -g n
+          sudo n 20
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
